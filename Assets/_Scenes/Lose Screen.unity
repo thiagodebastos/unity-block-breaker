@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 670144258}
   - component: {fileID: 670144257}
   m_Layer: 5
-  m_Name: Play Again Button
+  m_Name: Start Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.61643, g: 1, b: 0.5441177, a: 1}
+  m_Color: {r: 1, g: 0.1102941, b: 0.1102941, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -368,7 +368,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You beat Block Breaker!
+  m_Text: You lose!
 --- !u!222 &716319979
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 1472941202}
   - component: {fileID: 1472941201}
   m_Layer: 5
-  m_Name: Start Menu Button
+  m_Name: Start Button (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
