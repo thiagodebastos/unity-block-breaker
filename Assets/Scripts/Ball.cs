@@ -6,9 +6,7 @@ public class Ball : MonoBehaviour
 {
     // store reference to Paddle object
     public Paddle paddle;
-
     private Vector3 paddleToBallVector;
-
     private bool hasStarted = false;
     // Use this for initialization
     void Start()
@@ -31,6 +29,7 @@ public class Ball : MonoBehaviour
                 // prevent this code from running a second time
                 hasStarted = true;
                 // give Ball some velocity by accessing its RigidBody2D
+                // GetComponent of Type Rigidbody2D (generics)
                 this.GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 10f);
             }
         }

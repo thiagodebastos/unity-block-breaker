@@ -5,7 +5,6 @@ using UnityEngine;
 public class MusicPlayer : MonoBehaviour
 {
     static MusicPlayer instance = null;
-
     void Awake()
     {
         Debug.Log("MusicPlayer Awake " + GetInstanceID());
