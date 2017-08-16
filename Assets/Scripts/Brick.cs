@@ -17,16 +17,16 @@ public class Brick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timesHit == maxHits)
-        {
-            DestroyObject(gameObject);
-        }
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
         timesHit++;
-        SimulateWin();
+        // use >= instead of == to protect ourselves in case we skip over max hits
+        if (timesHit >= maxHits)
+        {
+            DestroyObject(gameObject);
+        }
     }
 
     // TODO: remove this method once we can actually win!
