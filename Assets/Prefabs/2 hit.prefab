@@ -79,6 +79,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHits: 2
+  hitSprites:
+  - {fileID: 21300016, guid: 5ccf6afd5162b4bdcabddee8b51bbf57, type: 3}
 --- !u!212 &212414251915206498
 SpriteRenderer:
   m_ObjectHideFlags: 1

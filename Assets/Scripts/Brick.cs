@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour
 {
-    private LevelManager levelManager;
     public int maxHits;
+    public Sprite[] hitSprites;
+
     private int timesHit;
+    private LevelManager levelManager;
     // Use this for initialization
     void Start()
     {
@@ -27,6 +29,16 @@ public class Brick : MonoBehaviour
         {
             DestroyObject(gameObject);
         }
+        else
+        {
+            LoadSprites();
+        }
+    }
+
+    void LoadSprites()
+    {
+        int spriteIndex = timesHit - 1;
+        this.GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
     }
 
     // TODO: remove this method once we can actually win!
